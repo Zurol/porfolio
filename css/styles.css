@@ -1,0 +1,70 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.left-side {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    background-color:aqua;
+}
+
+.parallax-container {
+    position: relative;
+    height: 200vh; /* para hacer scroll */
+}
+
+.parallax-block {
+    position: absolute;
+    width: 60%;
+    height: 300px;
+    left: 20%;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+}
+
+.block1 { background-color: red; top: 0; }
+.block2 { background-color: orange; top: 200px; }
+.block3 { background-color: teal; top: 400px; }
+.block4 { background-color: green; top: 600px; }
+
+.right-side {
+    width: 50%;
+    padding: 20px;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.details-panel {
+    display: none;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
