@@ -1,3 +1,8 @@
+@font-face {
+    font-family: ROBO;
+    src: url(../fonts/ROBO.ttf);
+}
+
 body {
     position: relative;
 }
@@ -33,9 +38,9 @@ section {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 200px;
+    /*width: 800px; */
     background: #212529;
-    padding-top: 60px;
+    padding-top: 10%;
 }
 
 #sidebar .nav-link {
@@ -52,5 +57,48 @@ section {
 /* Contenido con margen izquierdo para no taparse con sidebar */
 
 .content {
-    margin-left: 220px;
+    /*margin-left: 220px;*/
+}
+
+
+/************************/
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.canvas-container {
+    /*width: 800px;*/
+    height: 400px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: -1;
+}
+
+div.container-fluid {
+    padding-right: 0px;
+}
+
+.title-section {
+    margin-top: 15%;
+    font-family: 'ROBO';
+}
+
+.red-color {
+    background-color: #d62626;
+    padding: 25px;
+}
+
+section h1 {
+    font-family: 'ROBO';
+    font-size: 70pt;
+    border-bottom: 24px solid #d62626;
+    line-height: 1;
+}
+
+.section-content {
+    background-color: #d62626;
 }
