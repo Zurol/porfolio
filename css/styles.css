@@ -1,70 +1,56 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-    font-family: sans-serif;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-    max-width: 100%;
-}
-
-.left-side {
-    width: 50%;
+body {
     position: relative;
-    overflow: hidden;
-    background-color:aqua;
 }
 
-.parallax-container {
-    position: relative;
-    height: 200vh; /* para hacer scroll */
-}
-
-.parallax-block {
-    position: absolute;
-    width: 60%;
-    height: 300px;
-    left: 20%;
-    opacity: 0.8;
-    mix-blend-mode: multiply;
-}
-
-.block1 { background-color: red; top: 0; }
-.block2 { background-color: orange; top: 200px; }
-.block3 { background-color: teal; top: 400px; }
-.block4 { background-color: green; top: 600px; }
-
-.right-side {
-    width: 50%;
-    padding: 20px;
-    overflow-y: scroll;
+section {
     height: 100vh;
+    /* cada sección ocupa la pantalla */
+    padding: 50px;
+    scroll-margin-top: 20px;
 }
 
-header {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+#inicio {
+    background-color: #f8d7da;
 }
 
-.projects {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+#servicios {
+    background-color: #d1ecf1;
 }
 
-.project {
-    border: 1px solid #ccc;
-    padding: 10px;
+#portafolio {
+    background-color: #d4edda;
 }
 
-.details-panel {
-    display: none;
-    margin-top: 10px;
-    background-color: #f9f9f9;
-    padding: 10px;
+#contacto {
+    background-color: #fff3cd;
+}
+
+
+/* Sidebar izquierdo */
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background: #212529;
+    padding-top: 60px;
+}
+
+#sidebar .nav-link {
+    color: #adb5bd;
+    margin: 10px 0;
+}
+
+#sidebar .nav-link.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Contenido con margen izquierdo para no taparse con sidebar */
+
+.content {
+    margin-left: 220px;
 }
